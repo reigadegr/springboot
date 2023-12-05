@@ -5,9 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class UserController {
-    @GetMapping(value="/showlogin")
-    public String showLoginView(){
-
+    @GetMapping(value = "/showlogin") public String showLoginView()
+    {
         return "login";
     }
 }
