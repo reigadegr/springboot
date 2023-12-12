@@ -1,6 +1,6 @@
 package cn.edu.bcu.eshop.domain;
 
-public class Tuesr {
+public class Tuser {
     private Integer id;
     private String userName;
     private String psw;
