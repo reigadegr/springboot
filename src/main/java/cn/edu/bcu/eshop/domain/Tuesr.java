@@ -2,7 +2,7 @@ package cn.edu.bcu.eshop.domain;
 
 public class Tuesr {
     private Integer id;
-    private String user_name;
+    private String userName;
     private String psw;
     private String phone;
     private String address;
@@ -16,12 +16,12 @@ public class Tuesr {
         this.id = id;
     }
 
-    public String getUser_name() {
-        return user_name;
+    public String getuserName() {
+        return userName;
     }
 
-    public void setUser_name(String user_name) {
-        this.user_name = user_name;
+    public void setuserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPsw() {

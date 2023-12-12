@@ -7,8 +7,8 @@ $(function(){
 	var error_check = false;				//改 每次成功设为false
 
 
-	$('#user_name').blur(function() {
-		check_user_name();
+	$('#userName').blur(function() {
+		check_userName();
 	});
 
 	
@@ -41,18 +41,18 @@ $(function(){
 	
 	//方法具体实现
 	
-	function check_user_name(){
-		var len = $('#user_name').val().length;
+	function check_userName(){
+		var len = $('#userName').val().length;
 		if(len<3||len>20)
 		{
-			$('#user_name').next().html('请输入3-20个字符的用户名')
-			$('#user_name').next().show();
+			$('#userName').next().html('请输入3-20个字符的用户名')
+			$('#userName').next().show();
 			error_name = true;
 		}
 		else
 		{
 			console.log("用户成功")
-			$('#user_name').next().hide();
+			$('#userName').next().hide();
 			error_name = false;
 		}
 	}
@@ -140,7 +140,7 @@ $(function(){
 
 	
 	function send_register(){ 
-			var username = $('#user_name').val();	
+			var username = $('#userName').val();	
 			var password = $('#pwd').val();
 			var phone = $('#phone').val();
 			var addr = $('#addr').val();	
@@ -161,7 +161,7 @@ $(function(){
 	}
 
 	/*$('#reg').click(function() {
-		check_user_name();
+		check_userName();
 		check_pwd();
 		ver_Code();
 			
