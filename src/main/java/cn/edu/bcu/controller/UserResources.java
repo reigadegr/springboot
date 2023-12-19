@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 @RestController
 public class UserResources {
-    @PostMapping(value="/api/vi/users")
+    @PostMapping(value="/api/v1/users")
     public ResponseEntity<HashMap> register(){
         HashMap<String,Object> resultMap=new HashMap<>();
         resultMap.put("code",1000);
@@ -22,4 +22,5 @@ public class UserResources {
 //    {
 //        return "login";
 //    }
+
 }
