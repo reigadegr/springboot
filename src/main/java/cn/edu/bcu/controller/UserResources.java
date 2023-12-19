@@ -42,7 +42,9 @@ public class UserResources {
             resultMap.put("des", "服务器程序出错");
             responseEntity = new ResponseEntity<>(resultMap, HttpStatus.INTERNAL_SERVER_ERROR);
         }
-        return responseEntity;
+        finally {
+            return responseEntity;
+        }
     }
 }
 

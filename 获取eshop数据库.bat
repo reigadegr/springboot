@@ -1,0 +1,1 @@
+mysqldump -uroot -p1234 eshop > .\eshop.sql
