@@ -14,6 +14,7 @@ public class UserService {
         this.userMapper=userMapper;
     }
     public int register(Tuser tUser){
+        //return 1;
         return this.userMapper.addOne(tUser);
     }
 }
