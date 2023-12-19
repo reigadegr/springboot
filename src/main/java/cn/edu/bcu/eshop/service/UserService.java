@@ -1,6 +1,7 @@
 package cn.edu.bcu.eshop.service;
 
 
+import cn.edu.bcu.eshop.domain.Tuser;
 import cn.edu.bcu.eshop.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,5 +13,7 @@ public class UserService {
     public UserService( UserMapper userMapper){
         this.userMapper=userMapper;
     }
-
+    public int register(Tuser tUser){
+        return this.userMapper.addOne(tUser);
+    }
 }
