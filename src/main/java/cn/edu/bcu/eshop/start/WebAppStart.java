@@ -7,10 +7,12 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan({"cn.edu.bcu.eshop"})
-@MapperScan(basePackages = "cn.bcu.edu.eshop.mapper")
+@MapperScan(basePackages="cn.edu.bcu.eshop.mapper")
 public class WebAppStart {
-    public static void main(String[] args)
-    {
-        SpringApplication.run(WebAppStart.class, args);
-    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SpringApplication.run(WebAppStart.class, args);
+	}
+
 }
