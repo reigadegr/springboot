@@ -10,5 +10,4 @@ public interface UserMapper {
 
 @Insert("insert into t_user(user_name,psw,phone,address) values("+"#{userName},#{psw},#{phone},#{address})")
     public int addOne(Tuser tUser);
-
 }
