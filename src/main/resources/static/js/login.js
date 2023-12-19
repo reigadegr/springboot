@@ -1,23 +1,16 @@
-function register(){
+function login(){
     let userName = $("#userName").val();
     let psw = $("#psw").val();
-    let address = $("#address").val();
-    let phone = $("#phone").val();
-    alert(userName+psw+address+phone);
-
 
     $.ajax({
         type:"post",
         dataType:"json",
-        url:"http//localhost:8082/springboot/api/v1/users",
+        url:"http//localhost:8082/springboot/api/v1/user",
         data:{
             "userName":userName,
             "psw":psw,
-            "address":address,
-            "phone":phone
         },
         success:function (data){
-            data.msg = "undefined;"
             alert(data.msg);
         },
         error:function (error){

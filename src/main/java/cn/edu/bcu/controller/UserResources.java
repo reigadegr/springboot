@@ -46,5 +46,13 @@ public class UserResources {
             return responseEntity;
         }
     }
+
+
+    @PostMapping(value="/api/v1/user")
+    public ResponseEntity<HashMap> login(String userName,String psw){
+        System.out.println("用户名："+userName);
+        System.out.println("密码："+psw);
+        return null;
+    }
 }
 
