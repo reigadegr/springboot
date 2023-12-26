@@ -1,4 +1,4 @@
-package cn.edu.bcu.controller;
+package cn.edu.bcu.Resources;
 
 import cn.edu.bcu.eshop.domain.Tuser;
 import cn.edu.bcu.eshop.service.UserService;
@@ -49,10 +49,37 @@ public class UserResources {
 
 
     @PostMapping(value="/api/v1/user")
-    public ResponseEntity<HashMap> login(String userName,String psw){
-        System.out.println("用户名："+userName);
-        System.out.println("密码："+psw);
-        return null;
+    public ResponseEntity<HashMap> login(String userName,String psw) {
+        HashMap<String, Object> resultMap = new HashMap<>();
+        ResponseEntity responseEntity=null;
+        try {
+            int result = this.userService.login(userName,psw);
+            if (result > 0) {
+                resultMap.put("code", 1000);
+                resultMap.put("msg", "登录成功");
+                responseEntity = new ResponseEntity<HashMap>(resultMap, HttpStatus.OK);
+            } else {
+                resultMap.put("code", 1001);
+                resultMap.put("msg", "注册失败");
+                resultMap.put("des", "用户名||密码错误");
+                responseEntity = new ResponseEntity<HashMap>(resultMap, HttpStatus.OK);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            resultMap.put("code", 1002);
+            resultMap.put("msg", "登录失败");
+            resultMap.put("des", "服务器程序出错");
+            responseEntity = new ResponseEntity<>(resultMap, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        finally {
+            return responseEntity;
+        }
     }
+//    @PostMapping(value="/api/v1/user")
+//    public ResponseEntity<HashMap> login(String userName,String psw){
+//        System.out.println("用户名："+userName);
+//        System.out.println("密码："+psw);
+//        return null;
+//    }
 }
 

@@ -5,13 +5,20 @@ function login(){
     $.ajax({
         type:"post",
         dataType:"json",
-        url:"http//localhost:8082/springboot/api/v1/user",
+        url:"http://localhost:8082/springboot/api/v1/user",
         data:{
             "userName":userName,
             "psw":psw,
         },
         success:function (data){
-            alert(data.msg);
+            if(data.code==1000){
+                alert(data.msg);
+            }
+            else{
+                alert(data.msg);
+                //alert(data.des);
+            }
+
         },
         error:function (error){
             alert(error.msg);

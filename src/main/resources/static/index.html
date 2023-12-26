@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>天天生鲜-首页</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/slide.js"></script>
+</head>
+
+<body>
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎来到天天生鲜!</div>
+			<div class="fr welcome-user">
+				<div class="login_btn fl">
+					<a href="login.html">登录</a>
+					<span>|</span>
+					<a href="register.html">注册</a>
+				</div>
+				<div class="user_link fl">
+					<span>|</span>
+					欢迎您：<em>张 山 </em>
+					<span>|</span>
+					<a href="user_center_info.html">用户中心</a>
+					<span>|</span>
+					<a href="cart.html">我的购物车</a>
+					<span>|</span>
+					<a href="user_center_order.html">我的订单</a> 
+					<span>|</span>
+					<a href="user_center_order.html">注销</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="search_bar clearfix">
+		<a href="index.html" class="logo fl"><img src="images/logo.png"></a>
+		<div class="search_con fl">
+			<input type="text" class="input_text fl" name="" id="sou" placeholder="搜索商品">
+			<input onclick="cha()" type="button" class="input_btn fr" name="" value="搜索">
+		</div>
+		<div class="guest_cart fr">
+			<a href="cart.html" class="cart_name fl">我的购物车</a>
+		</div>
+	</div>
+
+	<div class="navbar_con">
+		<div class="navbar">
+			<h1 class="fl"><a href="index.html" style="color:white">首页</a></h1>
+			<ul class="navlist fl">
+				<li><a href="list.html">全部商品</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="center_con clearfix">
+		<ul class="subnav fl pro_class">
+			<!-- <li><a href="#model01" class="fruit">新鲜水果</a></li>
+			<li><a href="#model02" class="seafood">海鲜水产</a></li>
+			<li><a href="#model03" class="meet">猪牛羊肉</a></li>
+			<li><a href="#model04" class="egg">禽类蛋品</a></li>
+			<li><a href="#model05" class="vegetables">新鲜蔬菜</a></li>
+			<li><a href="#model06" class="ice">速冻食品</a></li> -->
+		</ul>
+		<div class="slide fl">
+			<ul class="slide_pics">
+				<li><a href="#model2"><img src="images/slide.jpg" alt="幻灯片"></a></li>
+				<li><a href="#model2"><img src="images/slide02.jpg" alt="幻灯片"></a></li>
+				<li><a href="#model3"><img src="images/slide03.jpg" alt="幻灯片"></a></li>
+				<li><a href="#model8"><img src="images/slide04.jpg" alt="幻灯片"></a></li>
+			</ul>
+			<div class="prev"></div>
+			<div class="next"></div>
+			<ul class="points"></ul>
+		</div>
+		<div class="adv fl">
+			<img src="images/adv01.jpg">
+			<img src="images/adv02.jpg">
+		</div>
+	</div>
+	
+	<div class="sexy">
+		<div class="list_model">
+					<div class="list_title clearfix">
+						<h3 class="fl" id="model2">水果</h3>
+						<div class="subtitle fl">
+							<span>|</span>
+					<a href="list2.html?secondid=1">菠萝</a><a href="list2.html?secondid=5">苹果</a><a href="list2.html?secondid=10">梨</a><a href="list2.html?secondid=16">西瓜</a></div>
+					 				<a href="#" class="goods_more fr" id="fruit_more">查看更多 &gt;</a>
+									</div>
+
+									<div class="goods_con clearfix">
+									<div class="goods_banner fl"><img src="images/banner01.jpg"></div>
+									<ul class="goods_list fl">
+										<li>
+											<h4><a href="detail.html?id=12&amp;ID=1">云南菠萝</a></h4>
+											<a href="detail.html?id=12&amp;ID=1"><img src="https://zjxsx.oss-cn-beijing.aliyuncs.com/fruit/15916847351616689.jpg"></a>
+											<div class="prize">¥ 18</div>
+										</li>
+										<li>
+											<h4><a href="detail.html?id=4&amp;ID=5">美国苹果</a></h4>
+											<a href="detail.html?id=4&amp;ID=5"><img src="https://zjxsx.oss-cn-beijing.aliyuncs.com/fruit/15916834003898480.jpg"></a>
+											<div class="prize">¥ 12</div>
+										</li>
+										<li>
+											<h4><a href="detail.html?id=5&amp;ID=5">韩国苹果</a></h4>
+											<a href="detail.html?id=5&amp;ID=5"><img src="https://zjxsx.oss-cn-beijing.aliyuncs.com/fruit/15916837427983927.jpg"></a>
+											<div class="prize">¥ 12</div>
+										</li>
+										<li>
+											<h4><a href="detail.html?id=11&amp;ID=10">山东大鸭梨</a></h4>
+											<a href="detail.html?id=11&amp;ID=10"><img src="https://zjxsx.oss-cn-beijing.aliyuncs.com/fruit/15916846152232236.jpg"></a>
+											<div class="prize">¥ 14</div>
+										</li></ul>
+		</div>
+	</div>
+		
+	</div>
+
+	<div class="footer">
+		<div class="foot_link">
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+			<span>|</span>
+			<a href="#">招聘人才</a>
+			<span>|</span>
+			<a href="#">友情链接</a>
+		</div>
+		<p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>
+		<p>电话：010-****888 京ICP备*******8号</p>
+	</div>
+	<script type="text/javascript">
+		function out() {
+			sessionStorage.removeItem('user');
+			window.location.replace('login.html')
+		}
+		// BCSlideshow('focuspic');
+		// var oFruit = document.getElementById('fruit_more');
+		// var oShownum = document.getElementById('show_count');
+
+		// var hasorder = sessionStorage.getItem('order_finish');
+
+		// if(hasorder)
+		// {
+		// 	oShownum.innerHTML = '2';
+		// }
+
+		// oFruit.onclick = function(){
+		// 	window.location.href = 'list.html';
+		// }
+		//一级分类
+
+		// <div class="list_model">
+		// 	<div class="list_title clearfix">
+		// 		<h3 class="fl" id="model01">新鲜水果</h3>
+		// 		<div class="subtitle fl">
+		// 			<span>|</span>
+		// 			<a href="#">鲜芒</a>
+		// 			<a href="#">加州提子</a>
+		// 			<a href="#">亚马逊牛油果</a>
+		// 		</div>
+		// 		<a href="#" class="goods_more fr" id="fruit_more">查看更多 ></a>
+		// 	</div>
+
+		// 	<div class="goods_con clearfix">
+		// 		<div class="goods_banner fl"><img src="images/banner01.jpg"></div>
+		// 		<ul class="goods_list fl">
+		// 			<li>
+		// 				<h4><a href="#">草莓</a></h4>
+		// 				<a href="#"><img src="images/goods/goods003.jpg"></a>
+		// 				<div class="prize">¥ 30.00</div>
+		// 			</li>
+		// 			<li>
+		// 				<h4><a href="#">葡萄</a></h4>
+		// 				<a href="#"><img src="images/goods/goods002.jpg"></a>
+		// 				<div class="prize">¥ 5.50</div>
+		// 			</li>
+		// 			<li>
+		// 				<h4><a href="#">柠檬</a></h4>
+		// 				<a href="#"><img src="images/goods/goods001.jpg"></a>
+		// 				<div class="prize">¥ 3.90</div>
+		// 			</li>
+		// 			<li>
+		// 				<h4><a href="#">奇异果</a></h4>
+		// 				<a href="#"><img src="images/goods/goods012.jpg"></a>
+		// 				<div class="prize">¥ 25.80</div>
+		// 			</li>
+		// 		</ul>
+		// 	</div>
+		// </div>2 3 8 13 14 15
+		/*let user = JSON.parse(sessionStorage.getItem('user'))
+		let classtype = ['fruit', 'meet', 'seafood', 'vegetables', 'egg', 'ice']
+		if (!user) {
+			$.ajax({
+				url: "https://www.zjxsx.top:9000/fruitShop/Product/Category/getCategory1c/jp",
+				method: "get",
+				success: (res => {
+					console.log(res.data)
+					if (res && res.data.entityList) {
+						let list = []
+						let list1 = []
+						let list2 = []
+						list = res.data.entityList
+						var result = ''
+						var result1 = ''
+						var result2 = ''
+						console.log(list)
+						list.forEach((item, index) => {
+							result += `<li><a href="#model${item.categoryId}" class="${classtype[index]}">${item.categoryName}</a></li>`
+							result1 += `<div class="list_model">
+					<div class="list_title clearfix">
+						<h3 class="fl" id="model${item.categoryId}">${item.categoryName}</h3>
+						<div class="subtitle fl">
+							<span>|</span>
+					`
+							list1 = item.category2
+							list1.forEach(item2 => {
+								result1 += `<a href="list2.html?secondid=${item2.categoryId}">${item2.categoryName}</a>`
+							})
+							result1 += `</div>
+					 				<a href="#" class="goods_more fr" id="fruit_more">查看更多 ></a>
+									</div>
+
+									<div class="goods_con clearfix">
+									<div class="goods_banner fl"><img src="images/banner0${index + 1}.jpg"></div>
+									<ul class="goods_list fl">`
+							list2 = item.hotGoods
+							list2.forEach(item3 => {
+								console.log(list2)
+								result1 += `
+										<li>
+											<h4><a href="detail.html?id=${item3.goodsId}&ID=${item3.categoryId}">${item3.goodsName}</a></h4>
+											<a href="detail.html?id=${item3.goodsId}&ID=${item3.categoryId}"><img src="https://zjxsx.oss-cn-beijing.aliyuncs.com/fruit/${item3.imgUrl}"></a>
+											<div class="prize">¥ ${item3.unit}</div>
+										</li>`
+							})
+							result1 += `</ul>
+		</div>
+	</div>`
+
+						}
+						)
+					}
+					$('.pro_class').html(result)
+					$('.sexy').html(result1)
+				}),
+				error: (res => {
+					alert('链接服务器失败')
+				})
+			})
+		} else {
+			$.ajax({
+				url: `https://www.zjxsx.top:9000/fruitShop/Product/Category/getCategory1c/user/jp?userId=${user.userId}`,
+				method: "get",
+				success: (res => {
+					console.log(res.data)
+					if (res && res.data.entityList) {
+						let list = []
+						let list1 = []
+						let list2 = []
+						list = res.data.entityList
+						var result = ''
+						var result1 = ''
+						var result2 = ''
+						console.log(list)
+						list.forEach((item, index) => {
+							result += `<li><a href="#model${item.categoryId}" class="${classtype[index]}">${item.categoryName}</a></li>`
+							result1 += `<div class="list_model">
+					<div class="list_title clearfix">
+						<h3 class="fl" id="model${item.categoryId}">${item.categoryName}</h3>
+						<div class="subtitle fl">
+							<span>|</span>
+					`
+							list1 = item.category2
+							list1.forEach(item2 => {
+								result1 += `<a href="list2.html?secondid=${item2.categoryId}">${item2.categoryName}</a>`
+							})
+							result1 += `</div>
+					 				<a href="#" class="goods_more fr" id="fruit_more">查看更多 ></a>
+									</div>
+
+									<div class="goods_con clearfix">
+									<div class="goods_banner fl"><img src="images/banner0${index + 1}.jpg"></div>
+									<ul class="goods_list fl">`
+							list2 = item.hotGoods
+							list2.forEach(item3 => {
+								// console.log(list2)
+								result1 += `
+										<li>
+											<h4><a href="detail.html?id=${item3.goodsId}&ID=${item3.categoryId}">${item3.goodsName}</a></h4>
+											<a href="detail.html?id=${item3.goodsId}&ID=${item3.categoryId}"><img src="https://zjxsx.oss-cn-beijing.aliyuncs.com/fruit/${item3.imgUrl}"></a>
+											<div class="prize">¥ ${item3.unit}</div>
+										</li>`
+							})
+							result1 += `</ul>
+		</div>
+	</div>`
+
+						}
+						)
+					}
+					$('.pro_class').html(result)
+					$('.sexy').html(result1)
+				}),
+				error: (res => {
+					alert('链接服务器失败')
+				})
+			})
+		}*/
+
+		//模糊查询
+		function cha() {
+			var cha = $("#sou").val();
+			window.location.replace(`list1.html?cha=${encodeURI(encodeURI(cha))}`)
+		}
+
+	</script>
+</body>
+
+</html>
+
+
+<!-- 
+1.ajax里后能不能写 return 参数
+2.class_name 数据库列名？ classname 标签id ?
+3.res 右边箭头
+4.BootsrapTable是什么调用方式
+5.一定要用error:function ？是否自行判断进入或者说，写过else就可忽略
+6.res.data.optionStatus ??
+7.如果在data中返回数据是不是就res.data.***了
+8.（因为只返回状态）所以验证码是不是也就取回来的code就行了
+9.提交总 div时已经被验证过的phone、验证码是不是还需再提交一次 -->

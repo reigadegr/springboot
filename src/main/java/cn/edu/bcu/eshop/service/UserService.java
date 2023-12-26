@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 @MapperScan("cn.edu.bcu.eshop.mapper")
 public class UserService {
+
     private final UserMapper userMapper;
 
     @Autowired
@@ -18,7 +19,10 @@ public class UserService {
     }
 
     public int register(Tuser tUser) {
-        //return 1;
         return this.userMapper.addOne(tUser);
+    }
+
+    public int login (String userName,String psw){
+        return this.userMapper.selectOne(userName,psw);
     }
 }
